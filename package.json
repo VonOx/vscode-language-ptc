@@ -1,0 +1,55 @@
+{
+    "name": "vscode-language-ptc",
+    "displayName": "PTC Configuration Files Language",
+    "description": "Adds syntax highlighting and autocompletion for PTC Configuration Files.",
+    "version": "0.0.0",
+    "publisher": "Medoune-NDOYE",
+    "repository": "https://github.com/Medoune-NDOYE/vscode-language-ptc",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "icon": "ptc.png",
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "configurationDefaults": {
+            "[config-pro]": {
+                "files.encoding": "windows1252"
+            }
+        },
+        "languages": [
+            {
+                "id": "config.pro",
+                "extensions": [
+                    ".pro",
+                    ".sup"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "config.pro",
+                "scopeName": "source.config-pro",
+                "path": "./syntaxes/config-pro.tmLanguage.json"
+            }
+        ]
+    },
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/extension.js",
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "@types/node": "^10.12.18",
+        "tslint": "^5.11.1",
+        "typescript": "^3.2.4",
+        "vscode": "^1.1.27"
+    }
+}
