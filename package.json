@@ -2,7 +2,7 @@
     "name": "vscode-language-ptc",
     "displayName": "PTC Configuration Files Language",
     "description": "Adds syntax highlighting and autocompletion for PTC Configuration Files.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "Medoune-NDOYE",
     "repository": "https://github.com/Medoune-NDOYE/vscode-language-ptc",
     "engines": {
@@ -14,28 +14,28 @@
     ],
     "contributes": {
         "configurationDefaults": {
-			"[config.pro]": {
-				"files.encoding": "windows1252"
-			},
-			"[trail.txt]": {
-				"files.encoding": "windows1252"
-			}
+            "[config.pro]": {
+                "files.encoding": "windows1252"
+            },
+            "[trail.txt]": {
+                "files.encoding": "windows1252"
+            }
         },
         "languages": [
-			{
-				"id": "config.pro",
-				"extensions": [
-					".pro",
-					".sup"
-				],
-				"configuration": "./language-configuration.json"
-			},
-			{
-				"id": "trail.txt",
-				"extensions": [
-					"trail.txt"
-				]
-			}
+            {
+                "id": "config.pro",
+                "extensions": [
+                    ".pro",
+                    ".sup"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "trail.txt",
+                "extensions": [
+                    "trail.txt"
+                ]
+            }
         ],
         "grammars": [
             {
