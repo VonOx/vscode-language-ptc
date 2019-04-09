@@ -19,6 +19,9 @@
             },
             "[trail.txt]": {
                 "files.encoding": "windows1252"
+            },
+            "[detail.dtl]": {
+                "files.encoding": "windows1252"
             }
         },
         "languages": [
@@ -35,6 +38,12 @@
                 "extensions": [
                     "trail.txt"
                 ]
+            },
+            {
+                "id": "detail.dtl",
+                "extensions": [
+                    ".dtl"
+                ]
             }
         ],
         "grammars": [
@@ -47,6 +56,11 @@
                 "language": "trail.txt",
                 "scopeName": "source.trail",
                 "path": "./syntaxes/trail.tmLanguage.json"
+            },
+            {
+                "language": "detail.dtl",
+                "scopeName": "source.detail-dtl",
+                "path": "./syntaxes/detail-dtl.tmLanguage.json"
             }
         ]
     },
