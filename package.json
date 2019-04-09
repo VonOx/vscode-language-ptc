@@ -14,25 +14,39 @@
     ],
     "contributes": {
         "configurationDefaults": {
-            "[config-pro]": {
-                "files.encoding": "windows1252"
-            }
+			"[config.pro]": {
+				"files.encoding": "windows1252"
+			},
+			"[trail.txt]": {
+				"files.encoding": "windows1252"
+			}
         },
         "languages": [
-            {
-                "id": "config.pro",
-                "extensions": [
-                    ".pro",
-                    ".sup"
-                ],
-                "configuration": "./language-configuration.json"
-            }
+			{
+				"id": "config.pro",
+				"extensions": [
+					".pro",
+					".sup"
+				],
+				"configuration": "./language-configuration.json"
+			},
+			{
+				"id": "trail.txt",
+				"extensions": [
+					"trail.txt"
+				]
+			}
         ],
         "grammars": [
             {
                 "language": "config.pro",
                 "scopeName": "source.config-pro",
                 "path": "./syntaxes/config-pro.tmLanguage.json"
+            },
+            {
+                "language": "trail.txt",
+                "scopeName": "source.trail",
+                "path": "./syntaxes/trail.tmLanguage.json"
             }
         ]
     },

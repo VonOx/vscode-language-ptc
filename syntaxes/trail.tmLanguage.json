@@ -1,0 +1,23 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "trail.txt",
+	"scopeName": "source.trail",
+	"patterns": [
+        {
+            "match": "^!%CW.*$",
+            "name": "invalid.illegal.trail"
+        },
+        {
+            "match": "^!%CI.*$",
+            "name": "keyword.control.smartassembly"
+        },
+        {
+            "match": "^!.*$",
+            "name": "comment.line.trail"
+        },
+        {
+            "match": "^~.*$",
+            "name": "entity.name.tag.config-pro"
+        }
+	]
+}

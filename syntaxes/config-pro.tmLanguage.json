@@ -16,7 +16,7 @@
             "name": "variable.other.config-pro"
         },
         {
-            "match": "mapkey.*",
+            "match": "^mapkey.*",
             "name": "keyword.control.config-pro"
         },
         {
@@ -24,11 +24,11 @@
             "name": "constant.character.escape.smartassembly"
         },
         {
-            "match": "!.*$",
+            "match": "^!.*$",
             "name": "comment.line.config-pro"
         },
         {
-            "match": ".{98,}",
+            "match": "^.{98,}",
             "name": "invalid.illegal.config-pro"
         }
 	]
