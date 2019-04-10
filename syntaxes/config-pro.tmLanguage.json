@@ -30,6 +30,10 @@
         {
             "match": "^.{98,}",
             "name": "invalid.illegal.config-pro"
+        },
+        {
+            "match": "^\\w+",
+            "name": "invalid.illegal.config-pro"
         }
 	]
 }
